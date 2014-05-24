@@ -1,0 +1,51 @@
+$img-path: "../img/";
+$ui-img-path: "../img/jquery-ui/";
+
+//--colors
+$gray-light: #f2f2f2;
+$gray-soft: #E6E6E6;
+$gray-medium: #979797;
+$green-light: #FAFFF8;
+$popup-warning-color:green;
+$error-color:red;
+$disabled:gray;
+
+
+//--scaffolding
+$base-font-color: #000;
+$base-font-size: 13px;
+
+$table-head-color: #C0C4CC; //$green-light;
+$table-even-color: #F2F2F2;
+$table-odd-color: #FFFFFF;
+$table-border-color: $gray-soft;
+
+$body-bg:$gray-light;
+$border-zone-color: $gray-medium;
+$content-bg: #DADDE2;
+$hr-color: $gray-medium;
+
+$zone-radius: 7px;
+
+$base-min-width: 750px;
+
+$gallery-min-height: 360px;
+$gallery-min-width: $base-min-width;
+$gallery-border-color: $gray-medium;
+
+$main-layout-min-width:$base-min-width;
+
+$dynamic-internal-indent:20px;
+$dynamic-indent:215px;
+
+$popup-window-width:500px;
+$popup-window-height:250px;
+$button_indent: 30px;
+
+$component_width:95%;
+
+$content-item-dark: lightgray;
+
+$release-border:1px solid #979797;
+
+$cardlist-padding:0 20px;

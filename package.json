@@ -1,0 +1,15 @@
+{
+  "name": "MRB-ExtraLite",
+  "title": "Marionette and Require Boilerplate ExtraLite",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brettjonesdev/MRB-Lite.git"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-jst": "^0.6.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

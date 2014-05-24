@@ -1,0 +1,15 @@
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/typography";
+@import "compass/utilities";
+@import "compass/css3/user-interface";
+
+@import 'variables';  //include _variables.scss at first
+@import 'typography';
+@import 'mixins';
+@import 'animations';
+
+// Import mincer asset paths helper integration
+@import "bootstrap-mincer";
+@import "bootstrap";

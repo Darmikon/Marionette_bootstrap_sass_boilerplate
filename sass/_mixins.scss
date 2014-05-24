@@ -1,0 +1,51 @@
+  // keyframes mixin
+  @mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+    /*
+    @-o-keyframes #{$name}{
+      @content;
+    }
+    */
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+
+ /*
+   @include keyframes(shake) {
+      100% {
+        left:20px;
+      }
+    }
+ */
+ @mixin animation($animate...) {
+   $max: length($animate);
+   $animations: '';
+
+   @for $i from 1 through $max {
+     $animations: #{$animations + nth($animate, $i)};
+
+     @if $i < $max {
+       $animations: #{$animations + ", "};
+     }
+   }
+   -webkit-animation: $animations;
+   -moz-animation:    $animations;
+   -o-animation:      $animations;
+   animation:         $animations;
+ }
+ /*
+ .object-to-animate {
+  @include animation('move-the-object .5s 1', 'move-the-object-again .5s 1 .5s');
+  //standart animation
+  //animation: myfirst 5s linear 2s infinite alternate;
+}
+ */
